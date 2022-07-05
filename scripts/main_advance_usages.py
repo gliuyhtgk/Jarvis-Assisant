@@ -153,7 +153,7 @@ if __name__ == "__main__":
                 if fingers == [0, 1, 1, 1, 1] and hand_type == 'Left':
                     cv2.destroyAllWindows()
                     cap.release()
-                    city = "Indore"
+                    city = "richmond"
                     weather_res = obj.weather(city=city)
                     print(weather_res)
                     t2s(weather_res)
