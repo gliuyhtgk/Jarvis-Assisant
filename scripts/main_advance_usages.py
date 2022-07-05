@@ -103,8 +103,8 @@ def start():
             t2s(f"I am {response}")
 
         if re.search('your name|who are you', res):
-            print("I am your personal assistant")
-            t2s("I am your personal assistant")
+            print("I am jarvis")
+            t2s("I am jarvis")
 
         if re.search('what can you do', res):
             li_commands = {
