@@ -134,15 +134,15 @@ if __name__ == "__main__":
     if not os.path.exists("configs/config.ini"):
         res = obj.setup()
         if res:
-            print("Settings Saved. Restart your Assistant")
+            print("Settings Saved. Restart jarvis")
     else:
         obj.jarvisai_configure_hand_detector(camera=0, detectionCon=0.7, maxHands=2,
-                                             cam_display=True, cam_height=720, cam_width=1280)
+                                             cam_display=True, cam_height=1920, cam_width=1080)
         while True:
             try:
                 fingers, hand_type, cv2, img, cap = obj.jarvisai_detect_hands()
                 # print(fingers, hand_type)
-                cv2.putText(img, 'Up four fingers of right hand to wake up assistant', (50, 200),
+                cv2.putText(img, 'Up four fingers of right hand to wake up jarvis', (50, 200),
                             cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
                 cv2.imshow("img", img)
                 cv2.waitKey(1)
@@ -159,4 +159,4 @@ if __name__ == "__main__":
                     t2s(weather_res)
             except:
                 obj.jarvisai_configure_hand_detector(camera=0, detectionCon=0.7, maxHands=2,
-                                                     cam_display=True, cam_height=720, cam_width=1280)
+                                                     cam_display=True, cam_height=1920, cam_width=1080)
