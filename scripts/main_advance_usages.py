@@ -61,6 +61,9 @@ def start():
             wiki_res = obj.tell_me(topic, sentences=1)
             print(wiki_res)
             t2s(wiki_res)
+            
+            if re.search('jarvis open facetime', res):
+            dict_app = {https://facetime.apple.com/join#v=1&p=jQmCxvy6EeyY1AJCFdZn4w&k=9HJ332ZM1tFjruDMbNZ9RACnBkllO1VbJ66CJennOhg
 
         if re.search('date', res):
             date = obj.tell_me_date()
