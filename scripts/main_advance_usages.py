@@ -115,8 +115,8 @@ def start():
                 "time": "Example: 'what time it is?'",
                 "date": "Example: 'what date it is?'",
                 "launch applications": "Example: 'launch chrome'",
-                "tell me": "Example: 'tell me about India'",
-                "weather": "Example: 'what weather/temperature in Mumbai?'",
+                "tell me": "Example: 'tell me about the united states'",
+                "weather": "Example: 'what weather/temperature in richmond?'",
                 "news": "Example: 'news for today' ",
             }
             ans = """I can do lots of things, for example you can ask me time, date, weather in your city,
